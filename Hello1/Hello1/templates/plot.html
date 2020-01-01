@@ -1,0 +1,30 @@
+﻿{% extends "base.html" %}
+
+{% block title %}Plot{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Plot Page</h1>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3">
+            <img src={{ src }} class="img-thumbnail" alt="not found" height="300" width="300">
+        </div>
+        <div class="col-lg-3">
+            <img src={{ src }} class="img-thumbnail" alt="not found" height="300" width="300">
+        </div>
+        <div class="col-lg-3">
+            <img src={{ src }} class="img-thumbnail" alt="not found" height="300" width="300">
+        </div>
+        <div class="col-lg-3">
+            <img src={{ src }} class="img-thumbnail" alt="not found" height="300" width="300">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <img src={{ src_bar }} class="img-thumbnail" alt="not found">
+        </div>
+    </div>
+</div>
+{% endblock %}

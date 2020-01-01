@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d3cdfc0a-499e-4d2b-a856-779fbf14fbf9</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>Hello1</Name>
+    <RootNamespace>Hello1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Hello1\service_functions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runserver.py" />
+    <Compile Include="Hello1\__init__.py" />
+    <Compile Include="Hello1\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Hello1\" />
+    <Folder Include="Hello1\static\" />
+    <Folder Include="Hello1\static\content\" />
+    <Folder Include="Hello1\static\fonts\" />
+    <Folder Include="Hello1\static\imgs\" />
+    <Folder Include="Hello1\static\scripts\" />
+    <Folder Include="Hello1\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GSAF5.xls" />
+    <Content Include="Hello1\static\imgs\attack1.jpg" />
+    <Content Include="Hello1\static\imgs\attack2.jpg" />
+    <Content Include="Hello1\static\imgs\attack3.jpg" />
+    <Content Include="Hello1\static\imgs\attack4.jpg" />
+    <Content Include="Hello1\static\imgs\attack5.jpg" />
+    <Content Include="Hello1\static\imgs\attack6.jpg" />
+    <Content Include="Hello1\static\imgs\bull_shark.jpg" />
+    <Content Include="Hello1\static\imgs\favicon.ico" />
+    <Content Include="Hello1\static\imgs\shark1.jpg" />
+    <Content Include="Hello1\static\imgs\tiger_shark.jpg" />
+    <Content Include="Hello1\templates\404.html" />
+    <Content Include="Hello1\templates\500.html" />
+    <Content Include="Hello1\templates\base.html" />
+    <Content Include="Hello1\templates\Gallery.html" />
+    <Content Include="Hello1\templates\plot.html" />
+    <Content Include="Hello1\templates\project.html" />
+    <Content Include="Hello1\templates\rawdata.html" />
+    <Content Include="Hello1\templates\user.html" />
+    <Content Include="Hello1\templates\user3b.html" />
+    <Content Include="Hello1\templates\user3c.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="Hello1\static\content\bootstrap.css" />
+    <Content Include="Hello1\static\content\bootstrap.min.css" />
+    <Content Include="Hello1\static\content\site.css" />
+    <Content Include="Hello1\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Hello1\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Hello1\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Hello1\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Hello1\static\scripts\bootstrap.js" />
+    <Content Include="Hello1\static\scripts\bootstrap.min.js" />
+    <Content Include="Hello1\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Hello1\static\scripts\jquery-1.10.2.js" />
+    <Content Include="Hello1\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="Hello1\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="Hello1\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Hello1\static\scripts\jquery.validate.js" />
+    <Content Include="Hello1\static\scripts\jquery.validate.min.js" />
+    <Content Include="Hello1\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Hello1\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Hello1\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="Hello1\static\scripts\respond.js" />
+    <Content Include="Hello1\static\scripts\respond.min.js" />
+    <Content Include="Hello1\static\scripts\_references.js" />
+    <Content Include="Hello1\templates\about.html" />
+    <Content Include="Hello1\templates\contact.html" />
+    <Content Include="Hello1\templates\index.html" />
+    <Content Include="Hello1\templates\layout.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

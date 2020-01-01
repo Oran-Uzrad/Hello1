@@ -1,0 +1,30 @@
+﻿{% extends "base.html" %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Photo Gallery</h1>
+</div>
+<div class="container">
+    <table class="table">
+        <tbody>
+            <tr>
+                <td><img src="/static/imgs/shark1.jpg" class="img-thumbnail" alt="White Shark" height="300" width="300"></td>
+                <td><img src="/static/imgs/tiger_shark.jpg" class="img-thumbnail" alt="Tiger Shark" height="300" width="300"></td>
+                <td><img src="/static/imgs/bull_shark.jpg" class="img-thumbnail" alt="Bull Shark" height="300" width="300"></td>
+            </tr>
+            <tr>
+                <td><img src="/static/imgs/attack1.jpg" class="img-thumbnail" alt="attack1" height="300" width="300"></td>
+                <td><img src="/static/imgs/attack2.jpg" class="img-thumbnail" alt="attack2" height="300" width="300"></td>
+                <td><img src="/static/imgs/attack3.jpg" class="img-thumbnail" alt="attack3" height="300" width="300"></td>
+            </tr>
+            <tr>
+                <td><img src="/static/imgs/attack4.jpg" class="img-thumbnail" alt="attack4" height="300" width="300"></td>
+                <td><img src="/static/imgs/attack5.jpg" class="img-thumbnail" alt="attack5" height="300" width="300"></td>
+                <td><img src="/static/imgs/attack6.jpg" class="img-thumbnail" alt="attack6" height="300" width="300"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

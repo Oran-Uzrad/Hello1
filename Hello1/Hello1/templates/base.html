@@ -1,0 +1,75 @@
+﻿{% extends "bootstrap/base.html" %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico, _external=True') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='imgs/favicon.ico, _external=True') }}" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: lightslategray;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+{% endblock %}
+
+{% block navbar %}
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/user/oran">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/rawdata">Raw Data</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/plot">Plot</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/project">Project</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    </ul>
+</div>
+
+    
+    {% endblock %}
+
+
+
+    {% block content %}
+    <div class="container">
+        {% block page_content %}{% endblock %}
+    </div>
+
+    <div class="footer">
+        <p> &copy Oran Uzrad</p>
+    </div>
+
+    {% endblock %}
+
+
+    {% block scripts %}
+    {{ super() }}
+    {{ moment.include_moment() }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    {% endblock %}
